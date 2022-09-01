@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+    font-size: large;
+}
+
+
+header{
+    margin: 0;
+    padding: 0;
+
+}
+
+main {
+    margin-inline: 60px 90px;
+    align-items: stretch;
+}
+
+main a{
+    color:#2C3333;
+    text-decoration: none;
+}
+main img{
+    width: 80%;
+    min-width: 350px;
+    max-width: 700px;
+}
+
+.apresentacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2C3333;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 80px;
+}
+
+.logo{
+    font-family: 'Forte';
+    color: aliceblue;
+}
+
+.midia a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.midia a:hover{
+    color: aliceblue;
+}
+
+
+.Titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.imgIndustria{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.linha{
+    height: 20px;
+    background-color: #1363DF;
+}
+.roda_pe{
+    height: 200px;
+    background-color: #2C3333;
+    color: aliceblue;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 150px;
+}
+.roda_pe  a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.roda_pe a:hover{
+    text-decoration: none;
+    color: unset;
+}
+
+main a:hover{
+    text-decoration: none;
+    color: unset;
+}
