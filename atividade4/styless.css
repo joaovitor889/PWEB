@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Varela Round', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(./img/rm251-mind-11-f.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #413F42   ;
+}
+header{
+    background-color: #2C3333;
+    height: 11vh;
+}
+
+header h1{
+    padding: 20px;
+    font-family: 'Teko', sans-serif;
+    color:#F7EC09;
+}
+nav{
+    background-color: #590995;
+    height: 50px;
+    box-shadow: 0 10px 10px #590995;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    margin: 3px 40px 3px 0;
+}
+nav ul li{
+    margin: 10px 30px;
+}
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Teko', sans-serif;
+    color:#F7EC09;
+    font-size: 25px;
+    
+}
+nav ul li a:hover {
+    text-decoration: none;
+    color: blueviolet;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+main{
+    width: 100%;
+    min-height: 100px;
+}
+section{
+    float: left;
+    width: 70%;
+    min-width: 300px;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+aside{
+    float: right;
+    background-color: #2C3333;
+    opacity: 0.8;
+    width: 10%;
+    min-width: 300px;
+    height: 800px;
+    border-radius: 20px;
+    margin: 80px 10px 0 0;
+    padding: 25px;
+    font-size: 20px;
+}
+aside h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+aside ul li{
+    margin-bottom: 20px;
+}
+
+article img{
+    width: 300px;
+    border-radius: 20px;
+}
+article{
+    display: flex;
+    background-color: #2C3333;
+    opacity: 0.9;
+    border-radius: 20px;
+    margin-top: 20px;
+    height: 200px;
+}
+
+.descricao{
+    margin: 10px;
+}
+
+.descricao h3{
+    text-align: center;
+    margin-bottom: 5px;
+}
