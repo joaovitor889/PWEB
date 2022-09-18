@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(./img/rm251-mind-16-e.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    width: 100%;
+    height: 5em;
+    background: -webkit-gradient(linear, left top, left bottom, from(#4C0033), to(#E80F88));
+}
+header h1{
+    text-align: center;
+    padding-top: 20px;
+}
+nav{
+    width: 100%;
+    background-color: #850E35;
+    color: blanchedalmond;
+    height: 2.5em;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    padding-top: 7px;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: large;
+}
+
+nav ul li a:hover{
+    color:#4C0033;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+}
+
+footer{
+    height: 5em;
+    background-color: #413F42;
+    padding-inline: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div{
+    border-right: solid #fff;
+    width: 150px;
+}
+footer div h3{
+    transform: translatey(0px);
+    animation: float 5s ease-in-out infinite;
+}
+@keyframes float{
+    0% {
+        transform: translatey(0px);
+    }
+    50%{
+        transform: translatey(-5px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
+section{
+    margin: 2em;
+}
+
+h2{
+    text-align: center;
+}
+
+article{
+    border-radius: 10px;
+    background-color: #413F42;
+    opacity: 0.9;
+}
+#Lançamentos{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto;
+    grid-template-rows: 150px 150px;
+
+    grid-template-areas: 'a b c d' 'a e f g';
+}
+#Lançamentos .a {
+    grid-area: a;
+}
+
+#Lançamentos .b {
+    grid-area: b;
+}
+
+#Lançamentos .c {
+    grid-area: c;
+}
+
+#Lançamentos .d {
+    grid-area: d;
+}
+
+#Lançamentos .e {
+    grid-area: e;
+}
+
+#Lançamentos .f {
+    grid-area: f;
+}
+
+#Lançamentos .g {
+    grid-area: g;
+}
+#Continuações{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto;
+    grid-template-rows: 150px 150px;
+
+    grid-template-areas: 'a b c d' 'e f g d';
+}
+#Continuações .a {
+    grid-area: a;
+}
+
+#Continuações .b {
+    grid-area: b;
+}
+
+#Continuações .c {
+    grid-area: c;
+}
+
+#Continuações .d {
+    grid-area: d;
+}
+
+#Continuações .e {
+    grid-area: e;
+}
+
+#Continuações .f {
+    grid-area: f;
+}
+
+#Continuações .g {
+    grid-area: g;
+}
+#Opiniões{
+    display: flex;
+    flex-wrap: wrap;
+}
+#Opiniões .a {
+    width: calc((100%/2) - (10px* 2));
+    box-shadow: 10px 10px #413f4285;
+}
+#Opiniões h3{
+    text-align: center;
+}
+#Opiniões p{
+    padding: 10px;
+}
+#Opiniões .b {
+    width: calc((100%/3) - (10px* 2));
+    box-shadow: 10px 10px #413f4285;
+}
+
+#Opiniões .box {
+    background-color: #413F42;
+    border-radius: 5px;
+    margin: 10px;
+    height: 10em;
+}
+.card-principal{
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    box-shadow: 10px 10px #413f4285;
+}
+.card-principal img{
+    border-radius: 10px;
+    height: 200px;
+}
+.card-principal div{
+    margin-left: 10px;
+  
+}
+
+.card{
+    display: flex;
+    max-width: 450px;
+    box-shadow: 10px 10px #413f4285;
+}
+.card img{
+    border-radius: 10px;
+    max-width: 150px;
+}
+
+.card div{
+    text-align: center;
+    margin-left: 10px;
+}
+.linha{
+    height: 10px;
+    background-color: #E80F88;
+}
