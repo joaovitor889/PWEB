@@ -1,0 +1,36 @@
+#test{
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (max-width: 1920px){
+    #test {
+        background-color: yellow;
+    }
+}
+
+@media screen and (max-width: 1366px){
+    #test {
+        background-color: purple;
+    }
+}
+@media screen and (max-width: 1080px){
+    #test {
+        background-color: red;
+    }
+}
+@media screen and (max-width: 1024px){
+    #test {
+        background-color: pink;
+    }
+}
+@media screen and (max-width: 768px){
+    #test {
+        background-color: orange;
+    }
+}
+@media screen and (max-width: 420px){
+    #test {
+        background-color: gray;
+    }
+}
