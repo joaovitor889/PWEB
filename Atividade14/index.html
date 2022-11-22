@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 4</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <form name="pesquisa" id="pesquisa" onsubmit="return validar();">
+        <h1>Formulário Principal</h1>
+        Nome:
+            <input type="text" name="idNome" id="idNome">
+        <br>
+        <br>
+        Email:
+            <input type="txtEmail" name="idEmail" id="idEmail">
+        <br>
+        <br>
+        Comentario:
+        <br>
+            <textarea name="idComentario" id="idComentario" cols="30" rows="10"></textarea>
+        </p>
+        <p id="txtPesquisa">Pesquisa</p>
+        <p id="txtpergunta">Primeira vez nesta página??</p>
+        <p>
+            <input type="radio" name="resposta" id="Sim">Sim <input type="radio" name="resposta" id="Nao">Não 
+        </p>
+        <input name="Submit" type="submit" form="pesquisa" value="Enviar">
+        <input name="Reset" type="reset" form="pesquisa" value="Redefinir">
+
+    </form>
+</body>
+</html>
