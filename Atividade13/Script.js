@@ -5,8 +5,8 @@ function mClick(obj){
     if(maiusculo. checked && minusculo. checked) {
         alert("Só pode ser escolhido um");
     }else if(maiusculo. checked){
-        alert(txt.toUpperCase());
+        document.querySelector("#Texto").value = document.querySelector("#Texto").value.toUpperCase();
     }else if(minusculo. checked){
-        alert(txt.toLowerCase())
+        document.querySelector("#Texto").value = document.querySelector("#Texto").value.toLowerCase();
     }
 }
