@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Flex';
+    color: #fff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background:#242922;
+}
+
+header{
+    background-color: #140f01b0;
+    box-shadow: 0px 3px 10px #464646;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h1 {
+    font-family: 'Roboto Slab';
+    padding-left: 2rem ;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav-item{
+    margin: 0 15px;
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+.mobile-menu-icon{
+    display: none;
+}
+.mobile-menu{
+   display: none; 
+}
+
+@media screen and (max-width:730px){
+    .nav-item{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .open{
+        display: block;
+    }
+    
+}
+.capa h2{
+    font-family: 'Roboto Slab';
+    font-size: 3rem;
+    margin-left: 3rem;
+}
+.capa{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.116) 51.56%, rgba(0, 0, 0, 0.2) 100%), url(./img/download.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 30rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    background-attachment: fixed; 
+}
+.midia{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.midia a{
+    border: solid 3px white;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0.3rem 1rem;
+    border-radius: 1rem;
+    margin: 1rem 3rem 0 2rem;
+}
+.midia a:hover{
+    box-shadow: 0.3rem 0.3rem 1rem white;
+}
+
+.caixa{
+    margin: 1rem 0 1rem 1rem;
+    display: inline-flex;
+    align-items: center;
+}
+.caixa .estatico{
+    color: #25E2E2;
+    text-shadow: 0px 4px 4px #000000;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.caixa .dinamico{
+    margin-left: 0.7rem;
+    line-height: 1.5rem;
+    height: 1.5rem;
+    overflow: hidden;
+    
+}
+.dinamico li{
+    color: #fff;
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    left: 0;
+    position: relative;
+    top: 0;
+    margin-bottom: 10px;
+    animation: slide 6s steps(3) infinite;
+    
+}
+@keyframes slide {
+    100%{
+        top: -100px;
+    }
+}
+.dinamico li span{
+    position: relative;
+}
+.dinamico li span::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-left: 2px solid #fff;
+    animation: typing 2s steps(20) infinite;
+    background: #242922;
+}
+.dinamico li span{
+    position: relative;
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -25px 0 25px;
+    }
+}
+
+.about{
+    max-width: 1400px;
+    margin: auto;
+}
+.about h2{
+    text-align: center;
+    margin: 3rem 0 3rem 0;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.picture img{
+    width: 20rem;
+    border: solid 10px #07d497;
+    border-style: double;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    margin-top: 3rem;
+}
+.description{
+    width: 40rem;
+    text-align: justify;
+    font-size: 20px;
+    margin: 0 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.description h2{
+    margin-bottom: 1rem;
+}
+.description .info{
+    border: 2px solid white;
+    border-radius: 1rem;
+    padding: 1rem;
+    list-style: none;
+}
+
+.info:hover #CV{
+    margin-top: 4rem;
+    text-decoration: none;
+    border: 2px solid #ffff;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+.info a:hover{
+    box-shadow: 0.3rem 0.3rem 1rem white;
+}
+
+#abilidades{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 23.13%, rgba(0, 0, 0, 0) 48.96%, rgba(0, 0, 0, 0.2) 72.15%, rgba(0, 0, 0, 0.2) 100%), url('https://img.freepik.com/free-photo/computer-screens-desk-empty-software-it-agency-office-computers-background-running-programming-code-data-algorithms-neural-network-servers-cloud-computing-data-room_482257-33530.jpg?w=900&t=st=1668644047~exp=1668644647~hmac=7cf9dadd6b29f5dc43e22357af7f92d1e70c5c8d61bafd39f53aa61c71639b00');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.skills{
+    margin: 5rem 0;
+    min-height: 40rem;
+}
+.skills h2{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.list_skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: auto;
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    min-width: 90px;
+    margin: 0.5rem 1rem 0 1rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    background-color: #09080aa9;
+}
+.skill h4{
+    text-align: center;
+    margin: 0.3rem 0;
+}
+.skill p {
+    text-align: justify; 
+}
+.skill img{
+    height: 10rem;
+}
+.languages h3{
+    text-align: center;
+}
+.list-languages{
+    margin-top: 3rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #09080abd;
+    max-width: 1400px;
+    border-radius: 3rem ;
+    margin-inline: auto;
+    align-items: center;
+}
+.list-languages img{
+    height: 5rem;
+}
+.language{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+}
+.language-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    height: 6rem;
+    width: 6rem;
+}
+.language-wrapper::before{
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    display: block;
+    border: 2px solid #ffffff;
+    border-radius: 100%;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.language:hover > .language-wrapper::before{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+.projects{
+    margin: 10rem 0;
+    min-height: 25rem;
+}
+.projects h2{
+    text-align: center;
+    margin: 4rem 0;
+    text-shadow: -0.1rem 0.25rem 0.30rem #000000;
+}
+.list_projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1400px;
+    margin: auto;
+}
+.project{
+    width: 20%;
+    min-width: 300px;
+    height: 15rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 0 1rem 1rem 1rem #000000;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    transition: 0.5s ease-in-out;
+}
+.project-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.project-wrapper::before{
+    content: ''; 
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    display: block;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.project h2{
+    margin: 0 0 1rem 0;
+}
+
+#prj3{
+    background-image:url(https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80) ;
+}
+
+#prj2{
+    background-image: url(https://images.unsplash.com/photo-1611262588024-d12430b98920?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+}
+
+#prj1{
+    background-image: url(https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+}
+
+
+.project a{
+    visibility: hidden;
+}
+
+footer{
+    height: 4rem;
+    background-color: #09080A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project:hover a{
+    text-align: center;
+    visibility: visible;
+    text-decoration: none;
+    padding: .3rem;
+    border: solid 3px white;
+    border-radius: 5px;
+    color: #fff;
+    margin: 0.5rem;
+    font-size: larger;
+    position: relative;
+}
+.project:hover > .project-wrapper::before{
+    height: 150px;
+    width: 250px;
+    opacity: 1; 
+}
+
+
+
+@media screen and (max-width: 560px) {
+    .info #CV{
+        margin-top: 4rem;
+        text-decoration: none;
+        font-style: italic;
+        padding: 0.5rem;
+    }
+
+    .list_skills{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skill img{
+        height: 5rem;
+    }
+
+    .project a{
+        text-align: center;
+        visibility: visible;
+        text-decoration: none;
+        padding: .3rem;
+        border: solid 3px white;
+        border-radius: 5px;
+        color: #fff;
+        margin: 0.5rem;
+        font-size: larger;
+    }
+
+}
+
